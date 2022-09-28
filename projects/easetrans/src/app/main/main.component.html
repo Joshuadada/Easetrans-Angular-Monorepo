@@ -1,0 +1,35 @@
+<div>
+    <div class="fixed left-0 right-0 top-0 bg-white z-20">
+      <div class="flex justify-between items-center border py-3 px-10">
+        <div class="text-xl font-bold">Ease<span class="text-blue-500">Trans</span></div>
+        <div class="flex items-center">
+          <div class="cursor-pointer font-semibold hover:text-blue-600 hover:border-b-2 hover:border-blue-600" routerLink="" routerLinkActive="text-blue-600 border-b-2 border-blue-600" [routerLinkActiveOptions]="{exact: true}">Home</div>
+          <div class="ml-5 font-semibold cursor-pointer hover:text-blue-600 hover:border-b-2 hover:border-blue-600" routerLink="/about" routerLinkActive="text-blue-600 border-b-2 border-blue-600">About Us</div>
+          <div class="ml-5 font-semibold cursor-pointer hover:text-blue-600 hover:border-b-2 hover:border-blue-600" routerLink="/contact" routerLinkActive="text-blue-600 border-b-2 border-blue-600">Contact Us</div>
+          <div class="ml-5 font-semibold cursor-pointer py-2 rounded px-3 text-sm text-white bg-blue-600 hover:bg-blue-500" routerLink="/book">Book Now</div>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+    <div class="bg-white py-32">
+      <div class="flex justify-center items-center">
+        <div class="flex">
+          <div class="cursor-pointer hover:text-blue-600" routerLink="">Home</div>
+          <div class="cursor-pointer hover:text-blue-600 ml-2 border-l px-2" routerLink="/about">About Us</div>
+          <div class="cursor-pointer hover:text-blue-600 ml-2 border-l pl-2" routerLink="/contact">Contact Us</div>
+          <div class="cursor-pointer hover:text-blue-600 ml-2 border-l pl-2" routerLink="">Privacy Policy</div>
+          <div class="cursor-pointer hover:text-blue-600 ml-2 border-l pl-2" routerLink="">Cookies Policy</div>
+          <div class="cursor-pointer hover:text-blue-600 ml-2 border-l pl-2" routerLink="">Legal Terms</div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-3">
+        <a href=""><img src="https://img.icons8.com/nolan/2x/facebook-new.png" alt="" class="w-10"></a>
+        <a href=""><img src="https://img.icons8.com/nolan/2x/twitter-circled.png" alt="" class="w-10"></a>
+        <a href=""><img src="https://img.icons8.com/nolan/2x/instagram-new.png" alt="" class="w-10"></a>
+        <a href=""><img src="https://img.icons8.com/nolan/2x/linkedin-circled.png" alt="" class="w-10"></a>
+      </div>
+      <div class="text-center mt-3">&copy; 2022.</div>
+    </div>
+  </div>
+  
+  

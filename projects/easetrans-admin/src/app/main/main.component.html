@@ -1,0 +1,24 @@
+<div class="grid grid-cols-[20%_80%] min-h-screen">
+    <div class="h-screen sticky z-20 top-0 left-0 overflow-auto relative bg-[#003099] ">
+      <div class="text-xl text-white font-bold text-center my-10">EaseTrans</div>
+      <div>
+        <div class="py-3 px-4 my-1 cursor-pointer text-white hover:bg-blue-400 hover:border-l-2" routerLink="" routerLinkActive="border-l-2 bg-blue-700" [routerLinkActiveOptions]="{exact: true}">Dashboard</div>
+        <div class="py-3 px-4 my-1 cursor-pointer text-white hover:bg-blue-400 hover:border-l-2" routerLink="/bookings" routerLinkActive="border-l-2 bg-blue-700">Bookings</div>
+        <div class="py-3 px-4 my-1 cursor-pointer text-white hover:bg-blue-400 hover:border-l-2" routerLink="/clients" routerLinkActive="border-l-2 bg-blue-700">Cients</div>
+        <div class="py-3 px-4 my-1 cursor-pointer text-white hover:bg-blue-400 hover:border-l-2" routerLink="/transactions" routerLinkActive="border-l-2 bg-blue-700">Transactions</div>
+        <div class="py-3 px-4 my-1 cursor-pointer text-white hover:bg-blue-400 hover:border-l-2" routerLink="/logs" routerLinkActive="border-l-2 bg-blue-700">Logs</div>
+        <div class="py-3 px-4 my-1 cursor-pointer text-white hover:bg-blue-400 hover:border-l-2" routerLink="/settings" routerLinkActive="border-l-2 bg-blue-700">Settings</div>
+      </div>
+      <div class="py-3 px-4 absolute bottom-10 my-1 cursor-pointer text-white hover:bg-blue-400 hover:border-l-2 w-full">Logout</div>
+    </div>
+    <div class="bg-slate-100">
+      <div class="bg-[#ffffff] hover:bg-[#002196] fixed w-full left-0 top-0 shadow p-1 flex ">
+        <div class="ml-auto flex items-center">
+          <div class="">Admin</div>
+          <img src="assets/user.png" class="w-8 ml-3" />
+        </div>
+      </div>
+      <div></div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
